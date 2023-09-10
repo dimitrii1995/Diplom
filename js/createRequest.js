@@ -1,4 +1,4 @@
-function createRequest(body, callback = (response) => {}) {
+function createRequest(body, callback = () => {}) {
     const xhr = new XMLHttpRequest();
     xhr.open ("POST", "https://jscp-diplom.netoserver.ru", true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");

@@ -1,6 +1,6 @@
 const selectSeanse = JSON.parse(sessionStorage.selectSeanse);
 const request = `event=get_hallConfig&timestamp=${selectSeanse.seanceTimeStamp}&hallId=${selectSeanse.hallId}&seanceId=${selectSeanse.seanceId}`;
-console.log(selectSeanse);
+
 
 document.addEventListener("DOMContentLoaded", () => {
 	const acceptinButton = document.querySelector(".acceptin-button");
